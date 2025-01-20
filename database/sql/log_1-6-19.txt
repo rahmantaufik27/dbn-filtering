@@ -1,0 +1,41 @@
+Log perubahan database tanggal 1-6-19:
+
+table admin
+name(varchar) ditambah
+
+table student
+role(varchar) dihapus
+
+table material
+name(varchar) ditambah 
+description(text) ditambah 
+
+table question_type
+type(varchar) diganti name(varchar)
+id_topic(int)
+
+table rule_of_bugs
+id_operation(int) diganti id_question_type(int)
+
+table rule_of_procedure
+id_operation(int) diganti id_question_type(int)
+
+table exercise
+id_topic(int) diganti id_question_type(int)
+
+table exercise
+id_exercise(int) diganti id_question_type(int)
+
+table exercise_result
+id_topic(int) dihapus
+id_student(int) dihapus
+score(float) ditambah
+
+table operation
+dihapus
+
+table question
+dihapus
+
+table answer
+dihapus

@@ -1,0 +1,124 @@
+// public function index()
+    // {
+    //     $bil1 = mt_rand(1, 10);
+    // 	$pn1 = mt_rand(-10, 10);
+    //     $pn2 = mt_rand(-10, 10);
+
+    //     $param = new \stdClass();
+    //     $param->bil1 = $bil1;
+    //     $param->pn1 = $pn1;
+    //     $param->pn2 = $pn2;
+    //     // $param->var =
+    //     $question = $this->mathService->createQuestion($param);
+    //     $answer1 = $this->mathService->productRule($param);
+    //     $answer2 = $this->mathService->quotientRule($param);
+    //     $answer3 = $this->mathService->powerRule($param);
+    //     $answer4 = $this->mathService->productMCRule($param);
+
+    //     $result = array(
+    //         "question" => $question,
+    //         "answer" => array(
+    //             $answer1,
+    //             $answer2,
+    //             $answer3,
+    //             $answer4
+
+    //         )
+    //         // "answer1" => $answer1,
+    //         // "answer2" => $answer2,
+    //         // "answer3" => $answer3,
+    //         // "answer4" => $answer4,
+    //     );
+    //     shuffle($result["answer"]);
+    //     return view('exercise.exercise')->with($result);
+    // }
+    
+// public function createQuestion ($params) {
+    //     // dd($params);
+    //     $question = "$$     ".$params->bil1."^{". $params->pn1."} \\times ". $params->bil1 ."^{". $params->pn2 ."}  = $$";
+    //     return $question;
+    // }
+
+
+    // public function createQuestion1 ($params) {
+    //     // dd($params);
+    //     $question = "$$     ".$params->bil1."^{". $params->pn1."} \\times ". $params->bil1 ."^{". $params->pn2 ."}  = $$";
+    //     return $question;
+    // }
+
+    // // 2b
+    // // public function createQuestion ($params) {
+	// //     return "$$ ". $params->bil1 ." ^{ ". $params->pn1 ." } \\times ". $params->bil1 ." ^{ ". $params->pn2 ." } : ". $params->bil1 ." ^{ ". $params->pn3 ." } = $$";
+    // // }
+
+    // //2c
+    // // public function createQuestion ($params) {
+	// //     return "$$ ( ". $bil1 ." ^{ ".  $pn1 ."})^{ ". $pn2 ." } \\times ".  $bil1 ." ^{ ". $pn3 ." } = $$";
+    // // }
+
+    // //2d
+    // // public function createQuestion ($params) {
+    // // 	return "$$ { ( ". $params->bil1 ." ^{ ". $params->pn1 ." })^{ ". $params->pn2 ." } \\over ". $params->bil1 ." ^{ ". $params->pn3 ." }} = $$";
+    // // }
+
+    // public function createQuestion2 ($params) {
+    //     $question = "$$     ".$params->bil1 ."^{ ". $params->pn1 . "} : ".  $params->bil1 ."^{  ". $params->pn2 . " } = $$";
+    //     return $question;
+    // }
+
+    // public function createQuestion3 ($params) {
+    //     $question = "$$( ". $params->bil1 . "^{ ". $params->pn1  ." })^{ ". $params->pn2 ."} = $$";
+    //     return $question;
+    // }
+
+    // public function createQuestion6 ($params) {
+    //     $pn1 = $params->pn1;
+    //     $pn2 = $params->pn2;
+    //     $pn3 = $params->pn3;
+
+    //     if ($params->pn1 == 1 ) $params->pn1 = null;
+    //     if ($params->pn2 == 1 ) $params->pn2 = null;
+    //     if ($params->pn3 == 1 ) $params->pn3 = null;
+
+    //     if ($params->opr == "*") {
+    //         $question = "$$( ". $params->bil1 . "^{ ". $params->pn1 ." } \\times ". $params->bil2 . " ^{ ". $params->pn2 ." })^{ ". $params->pn3 ." } = ". $pn1 ."|". $pn2 ."|". $pn3 ."$$";
+    //     } else {
+	//         $question = "$$ \left(". $params->bil1 ."^{ ". $params->pn1 ."} \over ". $params->bil2 ."^{ ". $params->pn2 ." } \\right )^{ ". $params->pn3 ." } = $$";
+    //     }
+    //     return $question;
+    // }
+
+    // public function createQuestion7 ($params) {
+    //     // $question = "$$ \\frac{( ". $params->alp1 . " ^{ ". $params->pn1 ." } \\times ". $params->alp2 ."^{ ". $params->pn2 ." })^{ ". $params->pn3 ." }}{( ". $params->alp1 . " ^{ ". $params->pn4  ."} \\times ". $params->alp2 ." ^{ ". $params->pn5 ." })^{ ". $params->pn6 ."}}=$$";
+    //     $question = "$$ \\left(\\frac{ ". $params->alp1 ." ^{ ". $params->pn1 . "} \\times ". $params->alp2 ." ^{ ". $params->pn2 . "}}{ ". $params->alp1 ."^{ ". $params->pn4 ." } \\times ". $params->alp2 ." ^{ ". $params->pn5 . "}} \\right) ^{ ". $params->pn6 ." } = $$";
+    //     return $question;
+    // }
+
+    // public function createQuestion9 ($params) {
+    //     return "$$( ". $params->bil ." )^{ ". $params->pn ." }$$";
+    // }
+
+    // public function createQuestion10 ($params) {
+    //     return "$$ \\frac{( ". $params->bil ." )^{ ". $params->pn . "}}{( ". $params->bil2 ." )^{ ". $params->pn2 ." }} =$$";
+    // }
+
+    // public function createQuestion11 ($params) {
+    //     return "$$ \\sqrt{ ".  $params->bilr . "} = $$";
+    // }
+
+    // public function createQuestion12 ($params) {
+    //     // dd($params->bilr);
+	//     return "$$ { ". $params->bil ." } \\sqrt { ". $params->bilr3 ."} + { ". $params->bil2 ." } \\sqrt{ ". $params->bilr2 ." } - { \\sqrt{ ". $params->bilr ."}} = $$";
+    // }
+
+    // public function createQuestion14 ($params) {
+    //     return "$$ \\sqrt{{ ". $params->bilr ."}{". $params->bilra ."^". $params->pn ."}{". $params->bilra2 ."^". $params->pn2 ."}} = $$";
+    // }
+
+    // public function createQuestion15 ($params) {
+    //     return "$$ ". $params->bil1 ." ^{{ ". $params->pn_p ." \\over ". $params->pn_pp ." }} = $$";
+    // }
+
+    // public function createQuestion16 ($params) {
+    // 	return "$$ ". $params->bil2_r ." ^{{ ". $params->pn_p ." \\over ". $params->pn_pp ." }}=$$";
+    // }

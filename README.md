@@ -1,2 +1,5 @@
-The Dynamic Bayesian Network (DBN) is one of the techniques of the machine learning
-DBN is proposed to filtering inference students' knowledge level and misconception. This algorithm is suitable to be applied in learning case studies that are used to predict student conditions based on various variables. The development of this proposed DBN is still rough and in process
+ITSAESM
+==============
+***Intelligent Tutoring System Adaptive Exercises based on Student Misconception***
+
+It is an artificial intelligence-powered recommender system designed to identify and address student misconceptions through adaptive exercises. This system personalizes learning experiences by tailoring content and feedback to individual needs, making it an innovative solution for improving conceptual understanding. ITSAESM serves as a practical application of AI in education and contributes to the fulfillment of advanced research projects such as thesis development.
